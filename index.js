@@ -24,7 +24,7 @@ const markCommit = (x, y) => {
 
 const makeCommits = (n) => {
     if (n === 0) return simpleGit().push();
-    const x = random.int(48, 50);
+    const x = random.int(35, 50);
     const y = random.int(0, 6);
     const date = moment().subtract(1, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format('YYYY-MM-DD HH:mm:ss');
 
@@ -38,4 +38,4 @@ const makeCommits = (n) => {
     });
 };
 
-makeCommits(100);
+makeCommits(200);
